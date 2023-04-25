@@ -8,7 +8,7 @@
    
 A completely Responsive Multiplayer TicTacToe Game- Works on Android, iOS, Web & Desktop! 
 <p align="center">
-  <img width="600" src="https://github.com/vishalnannore/multiplayer-tic-tac-toe/blob/main/screenshot.png" alt="Youtube Tutorial Image">
+  <img width="600" src="https://github.com/vishalnannore/SSL-flutter-multiplayer-tictactoe/blob/main/screenshot.png" >
 </p>
 
 ## Features
