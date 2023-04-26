@@ -11,9 +11,8 @@ var io = require("socket.io")(server);
 
 // middle ware
 app.use(express.json());
-
-const DB =
-  "mongodb+srv://vishal:Blaze_123@cluster0.c3wqtp4.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config()
+const DB =process.env.DB_URL;
 
 io.on("connection", (socket) => {
   console.log("connected!");
