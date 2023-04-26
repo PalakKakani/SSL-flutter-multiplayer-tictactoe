@@ -13,7 +13,9 @@ var io = require("socket.io")(server);
 app.use(express.json());
 require("dotenv").config()
 const DB =process.env.DB_URL;
-
+app.get("/",(req,res)=>{
+  res.status(200).json("Hello server");
+})
 io.on("connection", (socket) => {
   console.log("connected!");
   socket.on("createRoom", async ({ nickname }) => {
@@ -128,3 +130,4 @@ mongoose
 server.listen(port, "0.0.0.0", () => {
   console.log(`Server started and running on port ${port}`);
 });
+
